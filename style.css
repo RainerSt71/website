@@ -1,0 +1,47 @@
+/* ── NAVIGATION ── */
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 16px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: var(--shadow-sm);
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+#hamburger {
+  display: none;
+  background: none;
+  border: 2px solid white;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
+@media (max-width: 600px) {
+  #hamburger {
+    display: block;
+  }
+
+  #nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px 0;
+    gap: 16px;
+  }
+
+  #nav-links.open {
+    display: flex;
+  }
+
+  #nav-links a {
+    color: white;
+  }
+}
