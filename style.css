@@ -1,47 +1,55 @@
+/* ── GLOBAL RESET & BASE ── */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 /* ── NAVIGATION ── */
 #navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(10px);
+  background-color: #0d47a1;
   padding: 16px 40px;
   position: sticky;
   top: 0;
   z-index: 100;
-  box-shadow: var(--shadow-sm);
-  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+#logo {
+  color: white;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+#navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+}
+
+#navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+#navbar ul li a:hover {
+  text-decoration: underline;
 }
 
 #hamburger {
   display: none;
   background: none;
-  border: 2px solid white;
-  color: white;
-  font-size: 1.5rem;
-  cursor: pointer;
-  padding: 4px 10px;
-  border-radius: 6px;
-}
-
-@media (max-width: 600px) {
-  #hamburger {
-    display: block;
-  }
-
-  #nav-links {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    padding: 10px 0;
-    gap: 16px;
-  }
-
-  #nav-links.open {
-    display: flex;
-  }
-
-  #nav-links a {
-    color: white;
-  }
-}
+  border: 2p
