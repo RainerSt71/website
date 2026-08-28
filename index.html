@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Tutoring Website</title>
+  <meta name="description" content="1-on-1 math tutoring with Rainer for grades 5–13 — exam prep, online & in-person sessions. Get in touch for a free quote." />
+  <title>Rainer — Math Tutoring</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -17,6 +18,8 @@
       <li><a href="#hero">Home</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#services">Services</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
@@ -25,6 +28,7 @@
   <section id="hero">
     <h1>Hi, I'm Rainer</h1>
     <p>Math Tutoring — Mathe, endlich logisch.</p>
+    <a href="#contact" class="btn btn-primary">Get a Free Quote</a>
   </section>
 
   <!-- ABOUT SECTION -->
@@ -44,11 +48,20 @@
   <!-- SERVICES SECTION -->
   <section id="services">
     <h2>What I Offer</h2>
+    <p id="services-summary">Grades 5–13 · Exam prep · Online &amp; in-person</p>
     <ul>
       <li>1-on-1 Math tutoring</li>
       <li>Math exam preparation</li>
       <li>Online & in-person sessions</li>
     </ul>
+  </section>
+
+  <!-- PRICING SECTION -->
+  <section id="pricing">
+    <h2>Pricing</h2>
+    <p>Every student is different, so rates depend on level, format, and session length. Get in touch and I'll put
+      together a quote that fits your needs.</p>
+    <a href="#contact" class="btn btn-primary">Request a Quote</a>
   </section>
 
   <!-- TESTIMONIALS SECTION -->
@@ -73,12 +86,21 @@
   <!-- CONTACT SECTION -->
   <section id="contact">
     <h2>Get in Touch</h2>
-    <form action="https://formspree.io/f/mwvwlqgq" method="POST">
-      <input type="text" name="name" placeholder="Your Name" />
-      <input type="email" name="email" placeholder="Your Email" />
-      <textarea name="message" placeholder="Your message"></textarea>
+    <form id="contact-form" action="https://formspree.io/f/mwvwlqgq" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your message" required></textarea>
       <button type="submit">Send Message</button>
+      <p id="form-status" role="status" aria-live="polite"></p>
     </form>
+
+    <div id="contact-alt">
+      <p>Or reach me directly:</p>
+      <div id="contact-alt-links">
+        <a href="mailto:rstockmann@yahoo.de" class="btn btn-secondary">📧 Email</a>
+        <a href="https://wa.me/4917631439196" class="btn btn-secondary" target="_blank" rel="noopener">💬 WhatsApp</a>
+      </div>
+    </div>
   </section>
 
 
