@@ -1,114 +1,205 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="1-on-1 math tutoring with Rainer for grades 5–13 — exam prep, online & in-person sessions. Get in touch for a free quote." />
-  <title>Rainer — Math Tutoring</title>
+  <meta name="description" content="Mathe-Nachhilfe im Einzelunterricht mit Rainer für die Klassen 5–13 – Prüfungsvorbereitung, online &amp; vor Ort. Jetzt kostenloses Angebot anfragen." />
+  <title>Rainer – Mathe-Nachhilfe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-  <nav id="navbar">
-    <div id="logo">MyTutoring</div>
-    <button id="hamburger" aria-label="Menu">&#9776;</button>
-    <ul id="nav-links">
-      <li><a href="#hero">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#pricing">Pricing</a></li>
-      <li><a href="#testimonials">Testimonials</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+  <a class="skip" href="#inhalt">Zum Inhalt springen</a>
 
-  <!-- HERO SECTION -->
-  <section id="hero">
-    <h1>Hi, I'm Rainer</h1>
-    <p>Math Tutoring — Mathe, endlich logisch.</p>
-    <a href="#contact" class="btn btn-primary">Get a Free Quote</a>
-  </section>
+  <header id="navbar">
+    <a id="logo" href="#hero" aria-label="Rainer – Startseite">
+      <span class="logo-mark">∑</span> Rainer <span class="logo-sub">Mathe-Nachhilfe</span>
+    </a>
+    <button id="hamburger" aria-label="Menü öffnen" aria-expanded="false" aria-controls="nav-links">
+      <span></span><span></span><span></span>
+    </button>
+    <nav>
+      <ul id="nav-links">
+        <li><a href="#hero">Start</a></li>
+        <li><a href="#about">Über mich</a></li>
+        <li><a href="#services">Angebot</a></li>
+        <li><a href="#pricing">Preise</a></li>
+        <li><a href="#testimonials">Stimmen</a></li>
+        <li><a href="#contact" class="nav-cta">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <!-- ABOUT SECTION -->
-  <section id="about">
-    <div id="about-inner">
-      <img src="profile.jpg" alt="Photo of Rainer" id="profile-photo" />
-      <div>
-        <h2>About Me</h2>
-        <p>Mathematik ist meine Leidenschaft – und das schon seit meinem Diplom 1996. Als zweifacher Vater weiß ich,
-          dass jedes Kind einen eigenen Zugang zu Zahlen braucht. Seit vier Jahren begleite ich Schüler der Klassen 5
-          bis 13 mit viel Freude und Geduld zum Erfolg. Mein Ziel? Dass Mathe nicht nur verstanden wird, sondern auch
-          wieder Spaß macht.</p>
+  <main id="inhalt">
+
+    <!-- HERO -->
+    <section id="hero">
+      <div class="hero-grid-bg" aria-hidden="true"></div>
+      <span class="formula f1" aria-hidden="true">f(x) = x²</span>
+      <span class="formula f2" aria-hidden="true">∫ x dx</span>
+      <span class="formula f3" aria-hidden="true">π ≈ 3,14</span>
+      <span class="formula f4" aria-hidden="true">a² + b² = c²</span>
+
+      <div class="hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow">Einzelunterricht · Klasse 5–13</p>
+          <h1>Mathe,<br /><span class="hl">endlich logisch.</span></h1>
+          <p class="lead">Hallo, ich bin Rainer. Ich begleite Schülerinnen und Schüler mit Geduld, Klarheit und viel
+            Erfahrung – bis Mathe nicht nur verstanden wird, sondern wieder Spaß macht.</p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">Kostenloses Angebot anfragen</a>
+            <a href="#services" class="btn btn-ghost">Mein Angebot ansehen</a>
+          </div>
+          <ul class="hero-facts">
+            <li><strong>4 Jahre</strong> Nachhilfe-Erfahrung</li>
+            <li><strong>Seit 1996</strong> Diplom-Mathematiker</li>
+            <li><strong>Online</strong> &amp; vor Ort</li>
+          </ul>
+        </div>
+
+        <div class="hero-photo">
+          <div class="photo-frame">
+            <img src="Profile2.jpg" alt="Porträt von Rainer, Mathe-Nachhilfelehrer" width="1045" height="1104" />
+          </div>
+          <div class="badge badge-a" aria-hidden="true">
+            <span class="badge-num">5–13</span>
+            <span class="badge-txt">Klassenstufen</span>
+          </div>
+          <div class="badge badge-b" aria-hidden="true">
+            <span class="badge-num">1:1</span>
+            <span class="badge-txt">Einzelunterricht</span>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- SERVICES SECTION -->
-  <section id="services">
-    <h2>What I Offer</h2>
-    <p id="services-summary">Grades 5–13 · Exam prep · Online &amp; in-person</p>
-    <ul>
-      <li>1-on-1 Math tutoring</li>
-      <li>Math exam preparation</li>
-      <li>Online & in-person sessions</li>
-    </ul>
-  </section>
-
-  <!-- PRICING SECTION -->
-  <section id="pricing">
-    <h2>Pricing</h2>
-    <p>Every student is different, so rates depend on level, format, and session length. Get in touch and I'll put
-      together a quote that fits your needs.</p>
-    <a href="#contact" class="btn btn-primary">Request a Quote</a>
-  </section>
-
-  <!-- TESTIMONIALS SECTION -->
-  <section id="testimonials">
-    <h2>What Students Say</h2>
-    <div class="testimonial-grid">
-      <div class="testimonial-card">
-        <p>"Rainer explained things so clearly. My grade went from a C to an A in one month!"</p>
-        <span>— Anna, Grade 10</span>
+    <!-- ÜBER MICH -->
+    <section id="about">
+      <div class="container about-grid">
+        <div class="section-head left reveal">
+          <p class="eyebrow dark">Über mich</p>
+          <h2>Ein eigener Zugang zu Zahlen – für jedes Kind.</h2>
+        </div>
+        <div class="about-text reveal">
+          <p>Mathematik ist meine Leidenschaft – und das schon seit meinem Diplom 1996. Als zweifacher Vater weiß ich,
+            dass jedes Kind einen eigenen Zugang zu Zahlen braucht.</p>
+          <p>Seit vier Jahren begleite ich Schüler der Klassen 5 bis 13 mit viel Freude und Geduld zum Erfolg. Mein Ziel?
+            Dass Mathe nicht nur verstanden wird, sondern auch wieder Spaß macht.</p>
+        </div>
       </div>
-      <div class="testimonial-card">
-        <p>"Very patient and always prepared. I finally understood calculus thanks to these sessions."</p>
-        <span>— Markus, University student</span>
+    </section>
+
+    <!-- ANGEBOT -->
+    <section id="services">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow dark">Mein Angebot</p>
+          <h2>Das bekommst du bei mir</h2>
+          <p class="sub">Klassen 5–13 · Prüfungsvorbereitung · Online &amp; vor Ort</p>
+        </div>
+        <div class="card-grid">
+          <article class="card reveal">
+            <span class="card-icon" aria-hidden="true">1:1</span>
+            <h3>Mathe-Einzelunterricht</h3>
+            <p>Persönliche Betreuung, abgestimmt auf Tempo, Vorwissen und Lernstil deines Kindes.</p>
+          </article>
+          <article class="card reveal">
+            <span class="card-icon" aria-hidden="true">✓</span>
+            <h3>Prüfungsvorbereitung</h3>
+            <p>Gezielt und stressfrei auf Klassenarbeiten, Abitur und Klausuren vorbereitet.</p>
+          </article>
+          <article class="card reveal">
+            <span class="card-icon" aria-hidden="true">⌂</span>
+            <h3>Online &amp; vor Ort</h3>
+            <p>Flexibel per Videocall oder persönlich – ganz wie es für euch am besten passt.</p>
+          </article>
+        </div>
       </div>
-      <div class="testimonial-card">
-        <p>"My son looked forward to every session. Highly recommend!"</p>
-        <span>— Parent of a Grade 8 student</span>
+    </section>
+
+    <!-- PREISE -->
+    <section id="pricing">
+      <div class="container">
+        <div class="pricing-box reveal">
+          <div>
+            <p class="eyebrow">Preise</p>
+            <h2>Fair, transparent und individuell.</h2>
+            <p>Jeder Schüler ist anders – daher richten sich die Preise nach Niveau, Format und Dauer der Stunde.
+              Melde dich einfach bei mir, dann erstelle ich dir ein Angebot, das zu deinen Bedürfnissen passt.</p>
+          </div>
+          <a href="#contact" class="btn btn-primary">Angebot anfragen</a>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- CONTACT SECTION -->
-  <section id="contact">
-    <h2>Get in Touch</h2>
-    <form id="contact-form" action="https://formspree.io/f/mwvwlqgq" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
-      <textarea name="message" placeholder="Your message" required></textarea>
-      <button type="submit">Send Message</button>
-      <p id="form-status" role="status" aria-live="polite"></p>
-    </form>
-
-    <div id="contact-alt">
-      <p>Or reach me directly:</p>
-      <div id="contact-alt-links">
-        <a href="mailto:rstockmann@yahoo.de" class="btn btn-secondary">📧 Email</a>
-        <a href="https://wa.me/4917631439196" class="btn btn-secondary" target="_blank" rel="noopener">💬 WhatsApp</a>
+    <!-- STIMMEN -->
+    <section id="testimonials">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow dark">Stimmen</p>
+          <h2>Das sagen meine Schüler</h2>
+        </div>
+        <div class="card-grid">
+          <figure class="card quote reveal">
+            <blockquote>„Rainer hat alles so klar erklärt. Meine Note ist innerhalb eines Monats von einer 3 auf eine 1
+              gestiegen!“</blockquote>
+            <figcaption><span class="avatar">A</span> Anna, Klasse 10</figcaption>
+          </figure>
+          <figure class="card quote reveal">
+            <blockquote>„Sehr geduldig und immer gut vorbereitet. Dank dieser Stunden habe ich endlich die Analysis
+              verstanden.“</blockquote>
+            <figcaption><span class="avatar">M</span> Markus, Student</figcaption>
+          </figure>
+          <figure class="card quote reveal">
+            <blockquote>„Mein Sohn hat sich auf jede Stunde gefreut. Absolut empfehlenswert!“</blockquote>
+            <figcaption><span class="avatar">E</span> Elternteil eines Achtklässlers</figcaption>
+          </figure>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
+    <!-- KONTAKT -->
+    <section id="contact">
+      <div class="container contact-grid">
+        <div class="contact-intro reveal">
+          <p class="eyebrow">Kontakt</p>
+          <h2>Lass uns sprechen.</h2>
+          <p>Schreib mir kurz, wo es hakt – ich melde mich zeitnah mit einem unverbindlichen Angebot.</p>
+          <div id="contact-alt-links">
+            <a href="mailto:rstockmann@yahoo.de" class="btn btn-ghost">E-Mail schreiben</a>
+            <a href="https://wa.me/4917631439196" class="btn btn-ghost" target="_blank" rel="noopener">WhatsApp</a>
+          </div>
+        </div>
 
-  <!-- FOOTER -->
+        <form id="contact-form" class="reveal" action="https://formspree.io/f/mwvwlqgq" method="POST">
+          <label>Dein Name
+            <input type="text" name="name" placeholder="Max Mustermann" required autocomplete="name" />
+          </label>
+          <label>Deine E-Mail
+            <input type="email" name="email" placeholder="max@beispiel.de" required autocomplete="email" />
+          </label>
+          <label>Deine Nachricht
+            <textarea name="message" placeholder="Klassenstufe, Thema, Wunschtermin …" required></textarea>
+          </label>
+          <button type="submit" class="btn btn-primary">Nachricht senden</button>
+          <p id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
   <footer id="footer">
-    <p>© 2026 MyTutoring — All rights reserved.</p>
-    <p>📧 <a href="mailto:rstockmann@yahoo.de">rstockmann@yahoo.de</a></p>
-    <p>Made with ❤️ for students everywhere.</p>
+    <div class="container footer-inner">
+      <p class="footer-logo"><span class="logo-mark">∑</span> Rainer Mathe-Nachhilfe</p>
+      <p><a href="mailto:rstockmann@yahoo.de">rstockmann@yahoo.de</a></p>
+      <p class="small">© 2026 Rainer Mathe-Nachhilfe – Alle Rechte vorbehalten.</p>
+    </div>
   </footer>
 
   <script src="script.js"></script>
